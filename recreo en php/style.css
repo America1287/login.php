@@ -1,0 +1,385 @@
+/* --------- ESTILOS GENERALES --------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(90deg, #5de0e6, #004aad);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h1,
+h3 {
+  color: white;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+
+article {
+  color: black;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+a:visited {
+  color: white;
+}
+
+/* --------- ENCABEZADOS Y TEXTOS --------- */
+
+#inicio,
+#lema {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#inicio {
+  color: #f2ce1b;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#lema {
+  font-style: italic;
+  font-size: 15px;
+  color: #666;
+}
+
+#nombresoft {
+  color: white;
+  font-weight: 400;
+  padding: 10px 25px;
+  text-align: center;
+}
+
+#nombresoft strong {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.encabezado {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* --------- IMÁGENES Y LOGOS --------- */
+
+.escudo,
+.puerta {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.escudo {
+  width: 120px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* --------- BOTONES --------- */
+
+.ingreso,
+#logeo {
+  color: white;
+  background-color: #1da1f2;
+  border: 1px solid #2291f2;
+  border-radius: 25px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  padding: 15px 25px;
+  margin: 20px auto;
+  display: flex;
+  max-width: 80%;
+  max-width: 200px;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  width: fit-content;
+}
+
+#logeo2 {
+  color: white;
+  background-color: #1da1f2;
+  border: 1px solid #2291f2;
+  border-radius: 25px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  padding: 15px 25px;
+  margin: 10px auto;
+  display: flex;
+  max-width: 80%;
+  max-width: 200px;
+  transition: background-color 0.3s ease;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  width: fit-content;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-size: 16px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+button:hover,
+#logeo:hover,
+.ingreso:hover,
+.boton:hover {
+  background-color: #d91e1e;
+  border-color: #d91e1e;
+}
+
+/* --------- MENÚ Y CONTENEDORES --------- */
+
+#menu {
+  font-size: 1.3rem;
+  color: white;
+  background-color: #2291f2;
+  width: 90%;
+  max-width: 510px;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#content {
+  max-width: 300px;
+  width: 90%;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #dcf2f0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#content2 {
+  max-width: 300px;
+  width: 90%;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #dcf2f0;
+  margin: 20px auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.login {
+  background-color: #dcf2f0;
+  text-align: center;
+  margin: 0 auto;
+  /* padding: 20px; */
+  border-radius: 15px;
+  width: 90%;
+}
+
+/* --------- DISTRIBUCIÓN Y FLEX --------- */
+
+#contenedor {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#contenedor2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  box-sizing: border-box;
+}
+
+#lado1,
+#central,
+#lado2 {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#lado1,
+#lado2 {
+  width: 20%;
+}
+
+#central {
+  width: 60%;
+}
+
+#principal {
+  width: 66.66%;
+  height: auto;
+  background-color: #dcf2f0;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* padding: 20px; */
+  text-align: center;
+  max-width: 320px;
+  width: 100%;
+}
+
+/* --------- ALINEACIÓN Y SUBMENÚ --------- */
+
+.alineacion,
+.alineacion2 {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.submenu {
+  background: linear-gradient(#f2ce1b, #d91e1e);
+}
+
+.organizacion {
+  font-size: 0.9rem;
+  text-align: center;
+  width: 180px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* --------- ICONOS --------- */
+
+#icon1 {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+}
+
+#icon2,
+#icon3 {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 10px;
+}
+
+.card {
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.card h2 {
+  color: #333;
+}
+
+.logout-btn {
+  margin-top: 20px;
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+/* --------- FOOTER --------- */
+
+footer {
+  color: #5de0e6;
+  opacity: 0.5;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* --------- MEDIA QUERIES --------- */
+
+@media screen and (max-width: 768px) {
+  #menu {
+    font-size: 1rem;
+    width: 95%;
+  }
+
+  #content,
+  .login {
+    width: 95%;
+  }
+
+  #contenedor,
+  #contenedor2 {
+    flex-direction: column;
+  }
+
+  #lado1,
+  #central,
+  #lado2,
+  #sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .ingreso,
+  #logeo {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  #principal {
+    padding: 20px;
+  }
+
+  .boton {
+    width: 100%;
+    font-size: 16px;
+  }
+}
